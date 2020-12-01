@@ -1,0 +1,252 @@
+html, body{
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    margin: 0% 0%;
+    padding: 0% 0%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.title {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    text-align: center;
+    font-size: 52px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.8);
+}
+
+.desc {
+    position: relative;
+    top: 55%;
+    transform: translateY(-55%);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 250;
+    color: white;
+}
+
+form {
+    background-color: white;
+    width: 280px;
+}
+
+input, button {
+    position: relative;
+    width: 250px;
+    margin-left: 15px;
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    border: 0px solid white;
+    border-bottom: 1px solid #00b6a4;
+}
+
+input[type=password] {
+    border: 0px solid white;
+    border-bottom: 1px solid#00b6a4;
+}
+
+button {
+    background-color: #00b6a4;
+    border: 0.5px solid #00b6a4;
+    border-radius: 25em;
+    color: white;
+}
+
+.form, .table {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+table {
+    width: 250px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
+thead td {
+    font-style: italic;
+    border-bottom: 2px solid white;
+}
+
+tbody {
+    font-style: normal;
+}
+
+.login {
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 250;
+    color: #00b6a4;
+    padding: 5px 5px;
+    border-bottom: 2px solid #00b6a4;
+    margin: 0% 0%;
+}
+
+.correct {
+    color: green;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.incorrect {
+    color: red;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 640px) {
+
+    #page1part1 {
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: #00b6a4;
+        background-attachment: fixed;
+        background-image: url("/home1.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+    
+    #page1part2 {
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: #00b6a4;
+    }
+
+    #page2part1 {
+        height: 100%;
+        width: 100%;
+        background: #e90080;
+        display: block;
+        background-attachment: fixed;
+        background-image: url("/home2.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+    
+    #page2part2 {
+        height: 100%;
+        width: 100%;
+        background: #e90080;
+        display: block;
+    }
+
+    #page3part1 {
+        height: 100%;
+        width: 100%;
+        background: #e09200;
+        display: block;
+        background-attachment: fixed;
+        background-image: url("/home3.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+        background-size: auto 100%;
+    }
+    
+    #page3part2 {
+        height: 100%;
+        width: 100%;
+        background: #e09200;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    
+    #page1part1 {
+        display: block;
+        height:100%;
+        width: 50%;
+        float: left;
+        background: #00b6a4;
+        background-attachment: fixed;
+        background-image: url("/home1.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+        background-size: 200% 100%;
+    }
+    
+    #page1part2 {
+        display: block;
+        height: 100%;
+        width: 50%;
+        float: right;
+        background: #00b6a4;
+        background-attachment: fixed;
+        background-image: url("/home1.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+        background-size: 200% 100%;
+    }
+
+    #page2part1 {
+        display: block;
+        height:100%;
+        width: 50%;
+        float: left;
+        background: #e90080;
+        background-attachment: fixed;
+        background-image: url("/home2.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    #page2part2 {
+        display: block;
+        height: 100%;
+        width: 50%;
+        float: right;
+        background: #e90080;
+        background-attachment: fixed;
+        background-image: url("/home2.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    #page3part1 {
+        display: block;
+        height:100%;
+        width: 50%;
+        float: left;
+        background: #e09200;
+        background-attachment: fixed;
+        background-image: url("/home3.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    #page3part2 {
+        display: block;
+        height: 100%;
+        width: 50%;
+        float: right;
+        background: #e09200;
+        background-attachment: fixed;
+        background-image: url("/home3.svg");
+		background-position: top right;
+		background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+}

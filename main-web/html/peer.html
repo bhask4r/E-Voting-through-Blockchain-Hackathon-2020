@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoterChainConfig</title>
+    <!-- css -->
+    <link type="text/css" rel="stylesheet" href="peer.css" />
+</head>
+
+<body onload="document.getElementById('peerForm').reset();">
+    <!-- card form -->
+    <div class="card">
+        <h1>ADD PEER</h1>
+        <form id="peerForm" action="/addPeer" method="POST">
+            <p>
+                <input type="text" name="peer" id="ip" placeholder="websocket address" />
+            </p>
+            <p>
+                <button type="submit" value="submit">Add Peer</button>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
