@@ -21,7 +21,9 @@ App = {
   },
 
   initContract: function() {
-    $.getJSON("contest.json",function(contest){
+    $.getJSON("Contest.json",function(contest){
+      console.log(contest)
+      console.log(TruffleContract(contest))
       App.contracts.Contest = TruffleContract(contest);
       App.contracts.Contest.setProvider(App.web3Provider)
     })
@@ -31,7 +33,7 @@ App = {
 
   render:function(){
     var contestInstance;
-    var loader = $("#loader");
+    var loader = $("loader");
     var content = $("content");
 
     loader.show();
@@ -44,7 +46,7 @@ App = {
       }
     })
 
-    App.contracts.Contest.deployed().then(function(instance){
+    App.contracts.Contest().then(function(instance){
       contestInstance = instance
       return contestInstance.contestantsCount();
   }).then(function(contestantsCount){
@@ -76,3 +78,16 @@ $(function() {
     App.init();
   });
 });
+
+const Web3 = require("web3");
+const ethEnabled = () => {
+  if (window.ethereum) {
+    window.web3 = new Web3(window.ethereum);
+    window.ethereum.enable();
+    return true;
+  }
+  return false;
+}
+if (!ethEnabled()) {
+  alert("Please install MetaMask to use this dApp!");
+}
